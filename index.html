@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>喵喵隐者9</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        z-index: 1;
+        position: relative;
+        left: 0;
+        top: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw;
+        height: 10vw;
+      }
+
+      h1 {
+        font-size: 6vw;
+        width: 80vw;
+      }
+
+      button {
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 10vw;
+        height: 10vw;
+        background-size: 5vw;
+      }
+
+      button:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+      }
+
+      button:active {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      #俩框 {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10vw 2vw;
+      }
+
+      .清除 {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTUlEQVR4nO2aSw7CMAxEcxpA4iJQVXD/AyDBCRArSEVnQUSbfhIndudJXpt5iUqc1jlCCCGEEEIIIYs4+DoX6Hvuexdl7+vm6+XrKti3C//09fB1FOz7A8K/+5KSgPDoW0RCGF5KQhi+mITGfcOGPwQS2gw920jPJkPPUU7u/2rk2AlDK49el4S9ZiEhodrwIKeE6sODHBLUhAcpJagLD1JIUBserJGgPjxYIsFMeDBHgrnwYIoEs+FB7AgrfaQuwthOMLvyIVMlmAwPYhJMh+8Ye+ClHKCqJBbetISp4U1K2PTf4JRDjuTNkihzTnjmJCw53pqRsOZsr15CisFGrYSUU506CTlGWjUScs7z1UuQuMyoVoLkTU51Ejb/cnTnhl+P55znh3bC3RX4RiCUIHWZEUooEh5AgvRNDiQUDQ82/ZEUIYQQQgghhKjkA1NM29qMIKVnAAAAAElFTkSuQmCC);
+      }
+
+      .复制 {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVRoge3bsSuFURjH8SdiQimLkpvFP8BoNxhMNpNB+RcMkihlMgqTDeVfwKZsNptN3XKLK4rid8Jy3/c5LzrnfZ5uv199t/d2zme4d3qvSPn60Aq6Qs/ow0HTyl2TbAhdOkDWij5xAKwVPeUAVzt6zQGudvReyWEvaNtBY7nQByXoh1yHeRnRQnT3jmj5PXoWnaLb7+ctukfXaBON5ET3osOSz1jXRDO50FsOgFot1EiNHkWvDnCx9lOjlxygqmqmRq8rB4UftGODbpT7DKREa9/n/qpDMm1Vuc9w1QeJFqILI1qINhnRQnR8RAvRhREtRJuMaCE6PqKF6MKIFqJNRrQQHR/RQnRhRAvRJvs3OryrtdDRvPJs16D/MqKFaJMRLUSnG9FCtMmIFqLTbUM5ZEds3vy/UO4zmBK9rBziqVZKcNg4enMAi3WUGh226wCm1UaTOdDhR+vMAbCzJzSXA/yzHrSIztGjIfQd3cnX36wmYhf+BK4dBHcfth9iAAAAAElFTkSuQmCC);
+      }
+
+      textarea {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        resize: none;
+        font-size: 8vw;
+      }
+
+      #俩框 > div {
+        position: relative;
+        padding: 1vw;
+        width: 100%;
+        height: 50vw;
+      }
+
+      #俩框 > div > div {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+
+        bottom: 3vw;
+        right: 3vw;
+      }
+
+      @media (min-width: 720px) {
+        header {
+          height: 3vw;
+        }
+
+        h1 {
+          font-size: 2vw;
+          width: 10vw;
+        }
+
+        button {
+          width: 3vw;
+          height: 3vw;
+          background-size: 1.5vw;
+        }
+
+        #俩框 {
+          display: flex;
+          margin: 5vw 8vw;
+          padding: 0 5vw;
+        }
+
+        textarea {
+          font-size: 1.5vw;
+        }
+
+        #俩框 > div {
+          width: 50%;
+          height: 12.5vw;
+        }
+
+        #俩框 > div > div {
+          bottom: 1vw;
+          right: 1vw;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-wms-twF0.js"></script>
+  </head>
+  <body>
+  <h1>喵喵隐者9</h1>
+  <div id="俩框">
+    <div id="原文">
+      <textarea autocomplete="off" placeholder="原文" autofocus></textarea>
+      <div>
+        <button class="复制"></button>
+        <button class="清除"></button>
+      </div>
+    </div>
+    <div id="密文">
+      <textarea autocomplete="off" placeholder="密文"></textarea>
+      <div>
+        <button class="复制"></button>
+        <button class="清除"></button>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
